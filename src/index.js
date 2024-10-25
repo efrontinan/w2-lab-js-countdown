@@ -38,6 +38,7 @@ function startCountdown() {
       clearInterval(timer)
       showToast('Lift off! 🚀')
       console.log('Este es el tiempo', remainingTime)
+      //document.querySelector('button').disabled = false
     }
 
     if( remainingTime === 5){
@@ -67,6 +68,7 @@ function showToast(message) {
 
   const toasdTimeout = setTimeout(() => {
     document.querySelector('.toast').classList.remove('show')
+
 }, 3000)
 
 
